@@ -1,8 +1,7 @@
 {
     "functions": {
         "api/*.js": {
-            "runtime": "@martinpham/vercel-runtime-playground@1.0.4",
-            "excludeFiles": "{.cursor,.git,.pnpm-store,.vercel,node_modules,.env,docker,.next,tests,artisan,*.md,*.tsbuildinfo,*.yml}/**"
+            "runtime": "@martinpham/vercel-runtime-playground@1.0.4"
         }
     },
     "outputDirectory": "public",
