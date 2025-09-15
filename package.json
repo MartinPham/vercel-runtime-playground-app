@@ -8,8 +8,7 @@
     "build": "strapi build",
     "console": "strapi console",
     "deploy": "strapi deploy",
-    "init": "dotenv -e $(pwd)/.env -- sh -c 'if [ \"$DATABASE_CLIENT\" = \"mysql\" ]; then wait-port $DATABASE_HOST:$DATABASE_PORT && export MYSQL_PWD=$DATABASE_PASSWORD && mysql -h $DATABASE_HOST -P $DATABASE_PORT -u $DATABASE_USERNAME -e \"CREATE DATABASE IF NOT EXISTS $DATABASE_NAME\"; fi;'  && echo 'DB Init OK'",
-    "dev": "strapi develop & chokidar \"./types/generated/*.d.ts\" -c \"strapi openapi generate --output ../../packages/strapi-api/strapi.json && cp -rv types/generated ../../packages/strapi-api/src/strapi/\"",
+    "dev": "strapi develop",
     "develop": "strapi develop",
     "seed:example": "node ./scripts/seed.js",
     "start": "strapi start",
@@ -19,13 +18,11 @@
   },
   "dependencies": {
     "@fourlights/strapi-plugin-deep-populate": "^1.6.2",
-    "@strapi/plugin-cloud": "5.23.0",
     "@strapi/plugin-users-permissions": "5.23.0",
     "@strapi/strapi": "5.23.0",
     "better-sqlite3": "11.3.0",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
-    "mysql2": "^3.14.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
@@ -35,10 +32,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "chokidar-cli": "^3.0.0",
-    "dotenv-cli": "^10.0.0",
-    "typescript": "^5",
-    "wait-port": "^1.1.0"
+    "typescript": "^5"
   },
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
