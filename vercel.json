@@ -3,5 +3,15 @@
         "api/*.js": {
             "runtime": "@martinpham/vercel-runtime-playground@1.0.0"
         }
+    },
+    "outputDirectory": "public",
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.js"
+        }
+    ],
+    "env": {
+        
     }
 }
