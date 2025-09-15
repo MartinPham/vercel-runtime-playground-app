@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_rich_texts",
+  "info": {
+    "displayName": "Rich text",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "richtext"
+    },
+    "com31": {
+      "type": "component",
+      "component": "about.example-com",
+      "repeatable": true
+    },
+    "com32": {
+      "type": "component",
+      "component": "shared.quote",
+      "repeatable": false
+    }
+  }
+}
