@@ -1,7 +1,7 @@
 {
     "functions": {
         "api/*.js": {
-            "runtime": "https://github.com/MartinPham/vercel-runtime-playground@1.0.0"
+            "runtime": "https://github.com/MartinPham/vercel-runtime-playground@v1.0.0"
         }
     }
 }
