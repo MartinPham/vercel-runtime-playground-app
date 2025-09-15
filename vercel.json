@@ -1,7 +1,7 @@
 {
     "functions": {
         "api/*.js": {
-            "runtime": "@martinpham/vercel-runtime-playground@1.0.2"
+            "runtime": "@martinpham/vercel-runtime-playground@1.0.3"
         }
     },
     "outputDirectory": "public",
